@@ -1,12 +1,17 @@
 #Programa que peça o raio de um círculo, calcule e mostre sua área
 
+from cmath import pi
 from socket import SOMAXCONN
 
 
-raio = float(input("Digite Raio do Circulo: "))
 
-area = float(input("Digite Area: "))
+raio = int(input("Digite Raio do Circulo em m²: "))
 
-soma = raio + area
+pi = 3.14
 
-print("Valor da Area é:" , soma)
+area = pi * (raio ** 2)
+
+
+print ("A área do circulo é de: ", area)
+
+
